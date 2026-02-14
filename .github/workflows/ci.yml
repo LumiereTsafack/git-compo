@@ -1,0 +1,12 @@
+name: Test CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Afficher message
+        run: echo "GitHub Action fonctionne"
